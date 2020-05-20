@@ -12,11 +12,12 @@ class _CalcState extends State<Calc> {
   final decController  = TextEditingController();
 
   void _binaryChanged(String text){
-    //TODO: convert to binary to decimal
+    decController.text = (text == '') ? '' : int.parse(text, radix: 2).toString();
   }
 
   void _decimalChanged(String text){
-    //TODO: convert to decimal to binary
+    print(text != '');
+    binController.text = (text == '') ? '' : int.parse(text).toRadixString(2);
   }
 
   @override
