@@ -16,7 +16,6 @@ class _CalcState extends State<Calc> {
   }
 
   void _decimalChanged(String text){
-    print(text != '');
     binController.text = (text == '') ? '' : int.parse(text).toRadixString(2);
   }
 
