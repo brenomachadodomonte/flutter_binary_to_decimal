@@ -1,22 +1,11 @@
 import 'package:flutter/material.dart';
+import 'calc.dart';
 
 void main() => runApp(MaterialApp(
-  home: BinCalc(),
+  home: Calc(),
   theme: ThemeData(
-    primarySwatch: Colors.blue,
+    primarySwatch: Colors.deepPurple,
   ),
   debugShowCheckedModeBanner: false,
 ));
 
-class BinCalc extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Center(
-          child: Text('Coming soon!'),
-        ),
-      ),
-    );
-  }
-}
